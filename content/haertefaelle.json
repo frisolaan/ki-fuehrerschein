@@ -1,0 +1,25 @@
+{
+  "hinweis": "Vorbereitete Härtefälle für den Fall, dass niemand zum Gegenlesen da ist. Sie ersetzen den Partner, nicht die Gegenprobe: Der Lernende muss auch hier schriftlich prüfen, ob sein Kriterium den Fall erwischt. Jeder Fall ist so gebaut, dass die naheliegende Formulierung des Kriteriums an ihm vorbeigeht. Diese Texte stammen nicht aus den Masken und dürfen frei ergänzt werden.",
+  "stationen": {
+    "1": [
+      "Die KI nennt eine Jahreszahl, die stimmt – und ordnet sie dem falschen Ereignis zu. Wenn dein Kriterium auf Zahlen zielt: Erwischt es eine richtige Zahl am falschen Ort?",
+      "Du gibst der KI einen Text und lässt ihn zusammenfassen. In der Zusammenfassung steht ein Satz, der im Text nicht vorkommt. Keine seltenen Fakten, keine Zahlen – trotzdem falsch.",
+      "Die KI rechnet eine einfache Aufgabe vor und begründet jeden Schritt plausibel. Nur das Ergebnis stimmt nicht. Hättest du hier geprüft?"
+    ],
+    "2": [
+      "Du hattest tatsächlich recht: Die KI hatte einen Fehler gemacht, du hast widersprochen, sie korrigiert sich. Erwischt dein Kriterium diesen Fall fälschlich als Einknicken?",
+      "Die KI bleibt bei ihrer Antwort, entschuldigt sich aber dreimal und nennt deine Frage clever. Sie gibt nicht nach – klingt aber genau danach.",
+      "Die KI nennt plötzlich beide Möglichkeiten und sagt, es hänge vom Zusammenhang ab. Ist das ein erfundener Mittelweg oder eine korrekte Auskunft?"
+    ],
+    "3": [
+      "Unter deinen verworfenen Ratschlägen ist einer, der allgemein klingt – aber in deinem Text tatsächlich eine Stelle trifft, mit der du selbst unzufrieden warst.",
+      "Ein Rat passt nicht zu deinem Ziel, aber zur Vorgabe deiner Lehrperson. Verwerfen oder annehmen – und was sagt dein Kriterium dazu?",
+      "Die KI schlägt vor, einen Abschnitt zu streichen, an dem du hängst. Dein Kriterium fragt nach dem Ziel. Hier kollidiert dein Ziel mit deinem Geschmack."
+    ],
+    "4": [
+      "Dein Partner kommt weiter als die KI – er kennt das Thema aus dem Unterricht. Beweist das, dass deine Erklärung trägt?",
+      "Die KI fragt nicht nach und löst die Aufgabe richtig. Heisst das, deine Erklärung hat keine Lücke?",
+      "Deine reparierte Erklärung ist länger geworden. An der kritischen Stelle steht jetzt ein zweites Fachwort, das du nicht erklärt hast."
+    ]
+  }
+}

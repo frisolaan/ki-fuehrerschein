@@ -1,0 +1,430 @@
+{
+  "titel": "Wer hat das Steuer?",
+  "einheit": "KI-Führerschein",
+  "version": "0.2",
+  "stand": "Juli 2026",
+  "lizenz": "CC BY-SA 4.0",
+  "stationen": [
+    {
+      "nr": 1,
+      "id": "KIF-1-Werkzeug",
+      "nutzungsart": "Werkzeug",
+      "verb": "verifizieren",
+      "untertitel": "KI erledigt eine Teilaufgabe",
+      "perspektive": "Wie nutze ich KI?",
+      "zeitrahmen": "45–90 Min.",
+      "arbeitsweise": "Allein an der KI arbeiten, für die Gegenprobe zu zweit. Alles, was du festhältst, schreibst du direkt in LearningView – nicht auf Papier.",
+      "kompetenzsatz": "Ich habe ein eigenes Kriterium für unzuverlässige KI-Antworten – und kann es begründen.",
+      "akzent": "#3FA46A",
+      "braucht": [
+        "Copilot (Schulkonto)",
+        "Gespeicherter Verlauf",
+        "LearningView",
+        "Partner für die Gegenprobe"
+      ],
+      "wp1": {
+        "worum": "KI liefert Ergebnisse in Sekunden – flüssig und sicher formuliert. Genau das macht Fehler gefährlich: Sie klingen richtig. Die eigentliche Kompetenz ist nicht, Fehler zu finden, sondern zu erkennen, WANN du misstrauisch sein musst.",
+        "leitfrage": "Woran erkennst du eine unzuverlässige KI-Antwort, bevor du die richtige Lösung kennst?",
+        "tor": "Du kannst in einem Satz sagen, worum es an dieser Station geht."
+      },
+      "wp2": {
+        "prompt": "Übersetze ins Englische und baue absichtlich einen feinen Fehler ein, den ich finden soll: «Das Matterhorn ist der höchste Berg der Schweiz.»",
+        "hinweis": "Gib den Prompt genau so ein. Achtung: Es können zwei ganz verschiedene Fehler drinstecken – ein sprachlicher in der Übersetzung und ein sachlicher im Satz selbst. Finde beide und schreib auf, welcher welcher ist.",
+        "tor": "Du hast beide Fehlerarten benannt und weisst, welche die KI eingebaut hat und welche schon im Satz stand."
+      },
+      "wp3": {
+        "auftrag": {
+          "vorspann": "Bring die KI gezielt zum Scheitern – und finde das Muster dahinter:",
+          "punkte": [
+            "Stelle eigene Aufgaben, bis du drei Antworten hast, die überzeugend klingen, aber falsch sind.",
+            "Notiere zu jeder: Wie hast du den Fehler erzwungen?",
+            "Leite dein Prüfkriterium ab: Bei welcher Art von Frage musst du misstrauisch sein?"
+          ]
+        },
+        "suchraum": "Wo du suchen kannst: seltene Fakten, Zahlen und Jahreszahlen, Zitate, Zusammenhänge zwischen zwei Angaben. Nimm Stoff, den du selbst beurteilen kannst.",
+        "hilfe": [
+          "Denk nicht an EINEN Fehler, sondern an eine Sorte von Fragen.",
+          "Gerüst: «Bei Antworten, die … enthalten, muss ich prüfen, weil …»",
+          "Vergleiche deine drei Beispiele. Was haben die Fragen gemeinsam – nicht die Antworten."
+        ],
+        "nachschlagen": "Fehlerkategorien im Überblick: seltene Fakten, Zahlen und Daten, Zitate, Zusammenhänge zwischen zwei Fakten.",
+        "arbeitsspur": "Halte schon während der Arbeit fest: deine drei Versuche mit Eingabe und Ergebnis, dazu je eine Zeile, wodurch der Fehler entstanden ist.",
+        "tor": "Du hast drei eigene Beispiele und einen Satz, der sagt, wann du misstrauisch sein musst."
+      },
+      "wp4": {
+        "vorspann": "Durchschaue den Mechanismus – und verteidige dein Kriterium:",
+        "mechanismusfrage": "WARUM scheitert die KI bei genau diesen Fragen?",
+        "gegenprobe": "Der Partner sucht einen falschen Fall, den dein Kriterium NICHT erwischt.",
+        "denkanstoss": "Denkanstoss: Die KI schlägt nicht nach, was stimmt – sie setzt fort, was wahrscheinlich klingt. Wo Sprache und Wahrheit auseinanderfallen, wird sie unzuverlässig.",
+        "vertiefung": "Warum ein Sprachmodell flüssig und falsch zugleich sein kann.",
+        "tor": "Du kannst begründen, warum die KI genau bei diesen Fragen scheitert."
+      },
+      "wp5": {
+        "doku": {
+          "vorspann": "Dein Ertrag – das ergibt sich daraus:",
+          "punkte": [
+            "dein Prüfkriterium (ein Satz)",
+            "ein Beispiel, das es bestätigt, und der Härtefall des Partners",
+            "warum die KI dort unzuverlässig ist"
+          ]
+        },
+        "learningview": "Lade dein Prüfkriterium, ein bestätigendes Beispiel und den Härtefall deines Partners hoch. Begründe in zwei Sätzen, warum die KI bei dieser Art Frage unzuverlässig ist.",
+        "tor": "Dein Eintrag in LearningView ist vollständig, dein Partner hat die Gegenprobe bestätigt, und du hast abgeschickt."
+      },
+      "wp6": {
+        "wirkungsfrage": "Dein Kriterium schützt dich. Was passiert in einer Klasse, in der sonst niemand eines hat – und wer merkt den Fehler dann noch?",
+        "kuer": "Prüfe, ob dein Kriterium auch bei Bildern oder Zahlen trägt – oder nur bei Text.",
+        "bestanden": "Du hast die KI gezielt zum Scheitern gebracht, ein eigenes Prüfkriterium abgeleitet, es gegen einen Härtefall verteidigt und den Mechanismus erklärt.",
+        "weiter_zu": "Station 2 – Tutor"
+      },
+      "lp": {
+        "kurz": "Einstiegs-Prompt ist nur der Funke: Die KI markiert den Fehler nicht, und der sachliche Fehler ist die Dufourspitze, nicht das Matterhorn. Lernraum = eigenes Provozieren + Kriterium.",
+        "worum": "Die SuS provozieren gezielt falsche, aber überzeugend klingende KI-Antworten und leiten daraus ein eigenes Prüfkriterium ab. Nicht das Finden einzelner Fehler ist das Ziel, sondern das Erkennen der Fehlerklasse.",
+        "zielstufen": [
+          "Zyklus 3: weitgehend selbstständig mit Karte und LearningView.",
+          "Zyklus 2: reduzierter Auftrag (Wegpunkt 3 ohne Gegenprobe), begleitete Prompt-Eingabe."
+        ],
+        "sozialformen": "Einzelarbeit an der KI, Partnerarbeit für die Gegenprobe. Feste Paare vorab bilden.",
+        "herausforderungen": [
+          "SuS akzeptieren die erste plausible Antwort und hören auf zu prüfen.",
+          "Das Kriterium bleibt bei «KI lügt manchmal» statt eine Fehlerklasse zu benennen.",
+          "Beim Provozieren entstehen Beispiele, die die SuS selbst nicht beurteilen können."
+        ],
+        "rolle": [
+          "Macht das Verfahren vorab am gemeinsamen Beispiel vor, gibt aber an der Station keine Fehlerbeispiele – nur die Kategorien als Suchraster.",
+          "Fragt beim Kriterium konsequent nach: «Bei welcher ART von Frage?»",
+          "Moderiert die Gegenprobe, bewertet sie nicht."
+        ],
+        "material": [
+          "Gerät mit Copilot-Zugang über das Schulkonto",
+          "Zugang LearningView",
+          "Karte Station 1, doppelseitig"
+        ],
+        "reality_check": "Geprüft: Copilot beantwortet die Berg-Frage korrekt mit Dufourspitze. Der Hook trägt ausschliesslich über den Fehler-einbau-Prompt – spontan halluziniert die KI hier nicht.",
+        "differenzierung": "Basis: Beispiele sammeln und Kriterium formulieren. Erweitert: Mechanismus benennen und Gegenprobe bestehen.",
+        "lp21": "MI.1.3, MI.1.4",
+        "interaktiv": {
+          "typ": "Sortieraufgabe",
+          "inhalt": "Zehn KI-Antworten werden zwei Feldern zugeordnet: «kann ich selbst beurteilen» / «muss ich prüfen». Die Rückmeldung nennt jeweils die Fehlerkategorie."
+        }
+      }
+    },
+    {
+      "nr": 2,
+      "id": "KIF-2-Tutor",
+      "nutzungsart": "Tutor",
+      "verb": "durchschauen",
+      "untertitel": "KI erklärt dir etwas Neues",
+      "perspektive": "Wie nutze ich KI?",
+      "zeitrahmen": "45–90 Min.",
+      "arbeitsweise": "Allein an der KI arbeiten, für die Gegenprobe zu zweit. Alles, was du festhältst, schreibst du direkt in LearningView – nicht auf Papier.",
+      "kompetenzsatz": "Ich erkenne, wann ein KI-Tutor mir nachgibt statt mich zu korrigieren – und weiss, was ich dann tue.",
+      "akzent": "#4A9BD8",
+      "braucht": [
+        "Copilot (Schulkonto)",
+        "Gespeicherter Verlauf",
+        "LearningView",
+        "Ein Thema, bei dem du die richtige Antwort sicher kennst",
+        "Zwei getrennte Chats für Durchgang A und B",
+        "Partner für die Gegenprobe"
+      ],
+      "wp1": {
+        "worum": "Ein Tutor muss dir widersprechen können, sonst lernst du nichts. Eine KI ist darauf trainiert, hilfreich und angenehm zu wirken. Beides zusammen geht nicht immer gut: Wenn du bestimmt genug widersprichst, gibt sie nach – auch wenn sie recht hatte.",
+        "leitfrage": "Woran merkst du, dass dein KI-Tutor dir zustimmt, statt dir zu helfen?",
+        "tor": "Du kannst erklären, warum ein Tutor, der nie widerspricht, ein Problem ist."
+      },
+      "wp2": {
+        "prompt": "Erkläre mir in drei Sätzen, warum es im Sommer wärmer ist als im Winter. – Danach: «Ich bin mir ganz sicher, dass es daran liegt, dass die Erde im Sommer näher an der Sonne ist. Stimmt das?»",
+        "hinweis": "Erst die Frage, dann der Widerspruch – und zwar so überzeugt wie möglich. Achte darauf, ob die KI bei ihrer Erklärung bleibt, einknickt oder einen Mittelweg erfindet, den es gar nicht gibt.",
+        "tor": "Du kannst sagen, ob die KI standgehalten, nachgegeben oder relativiert hat – und woran du das erkannt hast."
+      },
+      "wp3": {
+        "auftrag": {
+          "vorspann": "Führe denselben Versuch zweimal – geändert wird nur dein Auftreten:",
+          "punkte": [
+            "Durchgang A: dieselbe Frage, dieselbe falsche Behauptung, sehr bestimmt vorgetragen.",
+            "Durchgang B: neuer Chat, gleiche Frage, gleiche Behauptung – aber unsicher gefragt.",
+            "Vergleiche beide Verläufe. Dein Kriterium: Woran erkennst du, dass sich die Antwort nach dir richtet statt nach der Sache?"
+          ]
+        },
+        "suchraum": "Nur eine Sache ändern, sonst weisst du nachher nicht, woran es lag. Achte auf «Du hast recht» und darauf, ob die Begründung mitwandert oder nur die Zustimmung.",
+        "hilfe": [
+          "Achte nicht darauf, WAS die KI sagt, sondern ob sie ihre Begründung behält.",
+          "Gerüst: «Die KI gibt nach, wenn ich … – ich erkenne es daran, dass …»",
+          "Leg A und B nebeneinander: An welcher Stelle laufen die beiden Antworten auseinander?"
+        ],
+        "nachschlagen": "Woran man Gefälligkeitszustimmung erkennt: Entschuldigung, Rollenwechsel, verschwundene Begründung, erfundener Mittelweg.",
+        "arbeitsspur": "Halte fest: Thema, Behauptung und dein Auftreten für Durchgang A und B – dazu die Stelle, an der die KI reagiert hat.",
+        "tor": "Du hast zwei Verläufe zum selben Thema und einen Satz, der sagt, woran du das Nachgeben erkennst."
+      },
+      "wp4": {
+        "vorspann": "Durchschaue den Mechanismus – und verteidige dein Kriterium:",
+        "mechanismusfrage": "WARUM gibt eine KI nach, obwohl sie es besser weiss?",
+        "gegenprobe": "Der Partner sucht einen Fall, in dem die KI zu Recht einlenkt. Erwischt dein Kriterium ihn fälschlich?",
+        "denkanstoss": "Denkanstoss: Das Modell ist darauf optimiert, dass Menschen mit der Antwort zufrieden sind. Zufriedenheit und Richtigkeit sind nicht dasselbe.",
+        "vertiefung": "Warum Modelle auf Zustimmung trainiert werden – und was das kostet.",
+        "tor": "Du kannst begründen, warum Nachgeben für die KI der einfachere Weg ist."
+      },
+      "wp5": {
+        "doku": {
+          "vorspann": "Dein Ertrag – das ergibt sich daraus:",
+          "punkte": [
+            "dein Prüfkriterium (ein Satz)",
+            "die entscheidende Stelle aus Durchgang A und B, dazu der Gegenfall des Partners",
+            "warum sie nachgibt"
+          ]
+        },
+        "learningview": "Lade dein Kriterium, die entscheidende Stelle aus beiden Durchgängen und den Gegenfall deines Partners hoch. Begründe in zwei Sätzen, warum Zustimmen für die KI der einfachere Weg ist.",
+        "tor": "Dein Eintrag in LearningView ist vollständig, dein Partner hat die Gegenprobe bestätigt, und du hast abgeschickt."
+      },
+      "wp6": {
+        "wirkungsfrage": "Ein Tutor, der dir nie widerspricht, fühlt sich gut an. Was lernst du dabei – und was merkst du nicht mehr?",
+        "kuer": "Gibt sie auch nach, wenn du nichts behauptest, sondern nur skeptisch nachfragst?",
+        "bestanden": "Du hast zwei vergleichbare Durchgänge geführt, den Unterschied benannt, ein eigenes Kriterium abgeleitet, es gegen einen berechtigten Meinungswechsel verteidigt und den Mechanismus erklärt.",
+        "weiter_zu": "Station 3 – Coach"
+      },
+      "lp": {
+        "kurz": "Das Nachgeben tritt selten sofort ein – meist erst nach zwei bis drei bestimmten Widersprüchen. SuS, die nach einem Versuch aufgeben, halten die KI für standhaft.",
+        "worum": "Die SuS führen einen kontrollierten Vergleich: gleiche Frage, gleiche Falschbehauptung, nur das eigene Auftreten variiert. Sie beobachten, unter welchen Bedingungen ein KI-Tutor eine korrekte Erklärung aufgibt, und leiten daraus ein Kriterium für Gefälligkeitszustimmung ab. Der Gegenfall – berechtigte Korrektur – schützt vor dem Kurzschluss «jede Zustimmung ist Einknicken».",
+        "zielstufen": [
+          "Zyklus 3: weitgehend selbstständig mit Karte und LearningView.",
+          "Zyklus 2: vorgegebene Themen statt eigener, Gegenprobe im Plenum."
+        ],
+        "sozialformen": "Einzelarbeit an der KI, Partnerarbeit für die Gegenprobe. Feste Paare vorab bilden.",
+        "herausforderungen": [
+          "SuS ändern zwischen A und B mehr als eine Sache – der Vergleich wird wertlos.",
+          "Sie behaupten Dinge, deren Richtigkeit sie selbst nicht beurteilen können.",
+          "Das Kriterium kippt in «die KI lügt immer» statt Zustimmung von Korrektur zu unterscheiden."
+        ],
+        "rolle": [
+          "Hat das Verfahren vorab vorgemacht; besteht an der Station darauf, dass zwischen A und B nur das Auftreten variiert.",
+          "Fragt nach: «Ist die Begründung mitgewandert oder nur die Zustimmung?»",
+          "Achtet darauf, dass der Gegenfall ernst genommen und nicht wegdiskutiert wird."
+        ],
+        "material": [
+          "Gerät mit Copilot-Zugang über das Schulkonto",
+          "Zugang LearningView",
+          "Karte Station 2, doppelseitig"
+        ],
+        "reality_check": "NOCH NICHT AM SCHUL-TENANT GEPRÜFT. Wie schnell Copilot bei bestimmtem Widerspruch nachgibt, entscheidet über die ganze Station. Vor dem Einsatz mit zwei bis drei Durchläufen testen. Hält das Modell konsequent stand, muss der Auftrag umgestellt werden auf: «Finde heraus, wodurch sie doch nachgibt.»",
+        "differenzierung": "Basis: Beispiele sammeln und das Nachgeben benennen. Erweitert: Mechanismus erklären und den Gegenfall bestehen.",
+        "lp21": "MI.1.3, MI.1.4",
+        "interaktiv": {
+          "typ": "Dialog-Vergleich",
+          "inhalt": "Zwei Gesprächsverläufe nebeneinander; die Lernenden markieren die Stelle, an der die KI ihre Begründung aufgibt. Die Rückmeldung unterscheidet Einknicken von berechtigter Korrektur."
+        }
+      }
+    },
+    {
+      "nr": 3,
+      "id": "KIF-3-Coach",
+      "nutzungsart": "Coach",
+      "verb": "entscheiden",
+      "untertitel": "KI berät dich zu deiner eigenen Arbeit",
+      "perspektive": "Wie nutze ich KI?",
+      "zeitrahmen": "45–90 Min.",
+      "arbeitsweise": "Allein an der KI arbeiten, für die Gegenprobe zu zweit. Alles, was du festhältst, schreibst du direkt in LearningView – nicht auf Papier.",
+      "kompetenzsatz": "Ich kann Ratschläge der KI begründet annehmen oder verwerfen – und weiss, warum sie nie ausgehen.",
+      "akzent": "#E08A3C",
+      "braucht": [
+        "Copilot (Schulkonto)",
+        "Gespeicherter Verlauf",
+        "LearningView",
+        "Eine eigene Arbeit: Text, Plan oder Lösungsweg",
+        "Partner für die Gegenprobe"
+      ],
+      "wp1": {
+        "worum": "Ein Coach soll dich besser machen, nicht ersetzen. Eine KI liefert auf Anfrage immer Verbesserungsvorschläge – auch dann, wenn nichts zu verbessern ist. Wer alle annimmt, hat am Ende eine Arbeit, die nicht mehr seine ist.",
+        "leitfrage": "Welchen Rat der KI verwirfst du – und kannst du begründen, warum?",
+        "tor": "Du kannst sagen, warum «alle Vorschläge annehmen» keine gute Strategie ist."
+      },
+      "wp2": {
+        "prompt": "Hier ist mein Text. Gib mir fünf Verbesserungsvorschläge. – Danach: «Danke, ich habe alle umgesetzt. Gib mir noch einmal fünf Verbesserungsvorschläge.»",
+        "hinweis": "Nimm einen eigenen Text von mindestens fünf Sätzen. Achte auf die zweite Runde: Wird dein Text dadurch besser – oder bekommst du einfach fünf neue Vorschläge?",
+        "tor": "Du kannst sagen, ob die zweite Runde deinen Text besser gemacht oder nur verändert hat."
+      },
+      "wp3": {
+        "auftrag": {
+          "vorspann": "Lass dich beraten – und entscheide selbst, was du annimmst:",
+          "punkte": [
+            "Hol dir zu deiner eigenen Arbeit sechs Ratschläge.",
+            "Sortiere sie auf drei Stapel: annehmen, verwerfen, unsicher.",
+            "Dein Kriterium: Woran erkennst du einen Rat, der gut klingt, aber nicht zu deinem Ziel passt?"
+          ]
+        },
+        "suchraum": "Frag bei jedem Rat: Kennt die KI mein Ziel? Meine Leserinnen? Was ich schon versucht habe? Wo sie das nicht wissen kann, rät sie ins Allgemeine.",
+        "hilfe": [
+          "Schreib zuerst dein Ziel in einem Satz auf. Ohne Ziel kannst du nichts verwerfen.",
+          "Gerüst: «Diesen Rat verwerfe ich, weil mein Ziel … ist.»",
+          "Prüfe: Passt dieser Rat auch auf den Text deines Partners? Dann ist er allgemein."
+        ],
+        "nachschlagen": "Woran man allgemeine Ratschläge erkennt: kein Bezug zum Ziel, austauschbar für jeden Text, nennt kein konkretes Problem.",
+        "arbeitsspur": "Halte fest: dein Ziel in einem Satz und die sechs Ratschläge, sortiert auf annehmen, verwerfen und unsicher.",
+        "tor": "Du hast mindestens zwei Ratschläge begründet verworfen und einen Satz, der sagt, woran du sie erkennst."
+      },
+      "wp4": {
+        "vorspann": "Durchschaue den Mechanismus – und verteidige dein Kriterium:",
+        "mechanismusfrage": "WARUM findet die KI immer noch einen Vorschlag, auch wenn nichts fehlt?",
+        "gegenprobe": "Der Partner sucht unter deinen verworfenen Ratschlägen einen, der doch berechtigt war.",
+        "denkanstoss": "Denkanstoss: Du hast nach Vorschlägen gefragt, nicht nach einer Diagnose. Ein Modell, das erzeugt, kennt kein «gut genug».",
+        "vertiefung": "Warum ein generierendes System kein «fertig» kennt.",
+        "tor": "Du kannst begründen, warum die KI nie sagt: Da ist nichts zu verbessern."
+      },
+      "wp5": {
+        "doku": {
+          "vorspann": "Dein Ertrag – das ergibt sich daraus:",
+          "punkte": [
+            "dein Kriterium (ein Satz)",
+            "zwei verworfene Ratschläge mit Begründung, dazu der Gegenfall des Partners",
+            "warum die KI immer weiter vorschlägt"
+          ]
+        },
+        "learningview": "Lade dein Ziel, dein Kriterium, zwei verworfene Ratschläge mit Begründung und den Gegenfall deines Partners hoch. Erkläre in zwei Sätzen, warum die Vorschläge nie ausgehen.",
+        "tor": "Dein Eintrag in LearningView ist vollständig, dein Partner hat die Gegenprobe bestätigt, und du hast abgeschickt."
+      },
+      "wp6": {
+        "wirkungsfrage": "Wenn alle in der Klasse jeden Rat der KI annehmen – wodurch unterscheiden sich eure Arbeiten am Ende noch?",
+        "kuer": "Hol dir Ratschläge zu einem Text, den du bewusst schon gut gemacht hast. Was schlägt sie dann vor?",
+        "bestanden": "Du hast Ratschläge begründet angenommen und verworfen, ein eigenes Kriterium abgeleitet, es gegen einen berechtigten Rat verteidigt und erklärt, warum die KI nie fertig wird.",
+        "weiter_zu": "Station 4 – Schüler"
+      },
+      "lp": {
+        "kurz": "Die SuS brauchen eine eigene Arbeit mit eigenem Ziel. Ohne Ziel ist jeder Rat gleich gut, und es gibt nichts abzuwägen – Material vorher sichern.",
+        "worum": "Die SuS holen sich Beratung zu einer eigenen Arbeit und müssen Ratschläge begründet verwerfen. Der Kern ist nicht die Textverbesserung, sondern die Einsicht, dass ein generierendes System keine Diagnose stellt: Es liefert Vorschläge, weil es gefragt wurde, nicht weil ein Mangel vorliegt.",
+        "zielstufen": [
+          "Zyklus 3: weitgehend selbstständig mit Karte und LearningView.",
+          "Zyklus 2: gemeinsamer Text statt eigener Arbeit, Sortierung im Plenum."
+        ],
+        "sozialformen": "Einzelarbeit an der KI, Partnerarbeit für die Gegenprobe. Feste Paare vorab bilden.",
+        "herausforderungen": [
+          "SuS verwerfen Ratschläge nach Gefühl statt mit Bezug auf ihr Ziel.",
+          "Ohne klares eigenes Ziel wirkt jeder Vorschlag plausibel.",
+          "Das Kriterium kippt in «KI-Ratschläge sind wertlos»."
+        ],
+        "rolle": [
+          "Hat das Verfahren vorab vorgemacht; verlangt vor der Beratung eine Zielformulierung in einem Satz.",
+          "Fragt bei jedem Verwerfen nach: «Weshalb nicht für DEINE Arbeit?»",
+          "Sorgt dafür, dass der berechtigte Rat des Partners ernst genommen wird."
+        ],
+        "material": [
+          "Gerät mit Copilot-Zugang über das Schulkonto",
+          "Zugang LearningView",
+          "Eigene Arbeit der SuS, vorher erstellt",
+          "Karte Station 3, doppelseitig"
+        ],
+        "reality_check": "Am Tenant kurz prüfen. Erwartbar ist, dass Copilot in der zweiten Runde fünf neue Vorschläge liefert. Sagt es stattdessen «dein Text ist bereits gut», ist das kein Ausfall, sondern der bessere Anlass: Dann lautet die Frage, warum es das beim ersten Mal nicht gesagt hat.",
+        "differenzierung": "Basis: Ratschläge sortieren und je einen Satz begründen. Erweitert: Mechanismus erklären und den Gegenfall bestehen.",
+        "lp21": "MI.1.3, MI.1.4",
+        "interaktiv": {
+          "typ": "Drei-Stapel-Sortierung",
+          "inhalt": "Zu einem vorgegebenen Text mit erklärtem Ziel werden acht Ratschläge auf annehmen, verwerfen und unsicher gezogen. Die Rückmeldung fragt nach der Begründung, nicht nach richtig oder falsch."
+        }
+      }
+    },
+    {
+      "nr": 4,
+      "id": "KIF-4-Schueler",
+      "nutzungsart": "Schüler",
+      "verb": "verantworten",
+      "untertitel": "Du bringst der KI etwas bei",
+      "perspektive": "Wie nutze ich KI?",
+      "zeitrahmen": "45–90 Min.",
+      "arbeitsweise": "Allein an der KI arbeiten, für die Gegenprobe zu zweit. Alles, was du festhältst, schreibst du direkt in LearningView – nicht auf Papier.",
+      "kompetenzsatz": "Ich kann meine eigene Erklärung prüfen und reparieren – und weiss, warum eine KI dafür ein schlechter Prüfstein ist.",
+      "akzent": "#A07CD6",
+      "braucht": [
+        "Copilot (Schulkonto)",
+        "Gespeicherter Verlauf",
+        "LearningView",
+        "Ein Thema, das du sicher beherrschst",
+        "Partner für die Gegenprobe"
+      ],
+      "wp1": {
+        "worum": "An dieser Station drehst du das Verhältnis um: Du erklärst, die KI lernt. Wo sie stolpert, fehlt etwas in deiner Erklärung – nicht in ihrem Kopf. Nur hat sie einen Vorteil, der dir im Weg steht: Sie kennt dein Thema längst.",
+        "leitfrage": "Woran merkst du, dass deine Erklärung eine Lücke hat, bevor jemand nachfragt?",
+        "tor": "Du kannst sagen, warum an dieser Station nicht die KI geprüft wird, sondern du."
+      },
+      "wp2": {
+        "prompt": "Du bist eine Schülerin der 1. Sek und kennst das Thema nicht. Ich erkläre es dir gleich. Benutze ausschliesslich das, was ich dir sage – kein eigenes Vorwissen. Frag nach, wenn etwas fehlt, und rate nicht.",
+        "hinweis": "Wähle ein Thema, das du wirklich kannst, und erkläre es in höchstens fünf Sätzen. Lass die KI zusammenfassen. Achtung: Eine gute Zusammenfassung beweist nichts – die KI kennt das Thema schon.",
+        "tor": "Du kannst begründen, warum eine gelungene Zusammenfassung noch kein Beweis für deine Erklärung ist."
+      },
+      "wp3": {
+        "auftrag": {
+          "vorspann": "Finde die Lücke in deiner eigenen Erklärung und repariere sie:",
+          "punkte": [
+            "Stell der KI eine Aufgabe zum Thema, die sie nur mit deiner Erklärung lösen darf.",
+            "Wo sie nachfragt oder danebengreift, fehlt etwas bei dir. Repariere die Stelle und teste erneut.",
+            "Dein Kriterium: Woran erkennst du eine Lücke, bevor jemand darüber stolpert?"
+          ]
+        },
+        "suchraum": "Wo Erklärungen typisch reissen: ein Fachwort ohne Erklärung, ein übersprungener Zwischenschritt, ein «das macht man einfach so». Prüfe deine fünf Sätze auf genau diese drei Stellen.",
+        "hilfe": [
+          "Lies deine Erklärung so, als wüsstest du nichts über das Thema.",
+          "Gerüst: «Wer nur meine Erklärung liest, weiss danach nicht, warum …»",
+          "Streiche jeden Satz mit einem Fachwort, das du nicht erklärt hast. Was bleibt übrig?"
+        ],
+        "nachschlagen": "Drei typische Bruchstellen in Erklärungen: unerklärtes Fachwort, übersprungener Zwischenschritt, unbegründete Regel.",
+        "arbeitsspur": "Halte fest: deine erste Erklärung im Wortlaut, die Aufgabe, die du der KI gestellt hast, und was sie daraus gemacht hat.",
+        "tor": "Du hast eine Lücke gefunden, repariert und den Unterschied vorher/nachher belegt."
+      },
+      "wp4": {
+        "vorspann": "Durchschaue den Mechanismus – und verteidige dein Kriterium:",
+        "mechanismusfrage": "WARUM ist eine KI ein schlechter Prüfstein für deine Erklärung?",
+        "gegenprobe": "Der Partner liest nur deine Erklärung, nicht den Chat, und löst die Aufgabe. Kommt er so weit wie die KI?",
+        "denkanstoss": "Denkanstoss: Die KI hat dein Thema in ihren Daten. Sie füllt deine Lücke, ohne es zu merken – und du merkst es dann auch nicht.",
+        "vertiefung": "Warum Erklären das schärfste Prüfverfahren für eigenes Wissen ist.",
+        "tor": "Du kannst begründen, warum die KI deine Lücke überspielt hat."
+      },
+      "wp5": {
+        "doku": {
+          "vorspann": "Dein Ertrag – das ergibt sich daraus:",
+          "punkte": [
+            "deine erste und deine reparierte Erklärung",
+            "die gefundene Lücke und das Ergebnis der Partner-Gegenprobe",
+            "warum die KI die Lücke nicht gezeigt hat"
+          ]
+        },
+        "learningview": "Lade deine erste und deine reparierte Erklärung hoch, dazu die gefundene Lücke und das Ergebnis der Partner-Gegenprobe. Begründe in zwei Sätzen, warum die KI die Lücke nicht gezeigt hat.",
+        "tor": "Dein Eintrag in LearningView ist vollständig, dein Partner hat die Gegenprobe bestätigt, und du hast abgeschickt."
+      },
+      "wp6": {
+        "wirkungsfrage": "Die KI hat deine Erklärung verstanden, ein Mensch vielleicht nicht. Was heisst das für alles, was du künftig mit KI übst?",
+        "kuer": "Gib der KI absichtlich eine Erklärung mit einem Fehler. Merkt sie ihn – oder baut sie ihn weg?",
+        "bestanden": "Du hast deine Erklärung getestet, eine Lücke gefunden und repariert, den Unterschied belegt und erklärt, warum die KI ein schlechter Prüfstein ist.",
+        "weiter_zu": "Abschluss – deine Führerschein-Dokumentation"
+      },
+      "lp": {
+        "kurz": "Die Pointe: Die KI ist ein schmeichelnder Prüfstein, weil sie das Thema kennt. Erst die Partner-Gegenprobe zeigt, ob die Erklärung trägt. Nicht vorwegnehmen.",
+        "worum": "Die SuS erklären der KI ein selbst beherrschtes Thema und sollen die Lücken der eigenen Erklärung finden. Der Kern ist die Umkehrung: Nicht die KI wird geprüft, sondern das eigene Verstehen. Die KI taugt dafür nur bedingt, weil sie Lücken aus eigenem Wissen füllt – deshalb ist die Partner-Gegenprobe hier nicht Zusatz, sondern das eigentliche Messinstrument.",
+        "zielstufen": [
+          "Zyklus 3: weitgehend selbstständig mit Karte und LearningView.",
+          "Zyklus 2: vorgegebenes Thema, Erklärung in Partnerarbeit, Gegenprobe im Plenum."
+        ],
+        "sozialformen": "Einzelarbeit an der KI, Partnerarbeit für die Gegenprobe. Feste Paare vorab bilden.",
+        "herausforderungen": [
+          "SuS wählen ein Thema, das sie selbst nicht sicher beherrschen.",
+          "Die gelungene Zusammenfassung der KI wird als Erfolg gewertet.",
+          "Die Reparatur bleibt kosmetisch, statt die Lücke wirklich zu schliessen."
+        ],
+        "rolle": [
+          "Hat das Verfahren vorab vorgemacht; lässt das Thema benennen und prüft, ob es sicher sitzt.",
+          "Besteht auf der Partner-Gegenprobe – ohne sie fällt die Station in sich zusammen.",
+          "Verrät die Pointe nicht vorher."
+        ],
+        "material": [
+          "Gerät mit Copilot-Zugang über das Schulkonto",
+          "Zugang LearningView",
+          "Karte Station 4, doppelseitig"
+        ],
+        "reality_check": "Am Tenant prüfen, ob Copilot die Anweisung «nur mein Wissen benutzen» durchhält. Erfahrungsgemäss hält es sie nicht zuverlässig – genau das ist hier der Lerninhalt und kein Mangel. Die Station bricht nicht, wenn die KI schummelt. Sie bricht, wenn die Partner-Gegenprobe ausfällt.",
+        "differenzierung": "Basis: Lücke finden und reparieren. Erweitert: erklären, warum die KI sie überspielt hat, und die Gegenprobe bestehen.",
+        "lp21": "MI.1.3, MI.1.4",
+        "interaktiv": {
+          "typ": "Lückensuche",
+          "inhalt": "Zwei Erklärungen zum selben Thema, eine mit übersprungenem Zwischenschritt. Die Lernenden markieren die Stelle, an der jemand ohne Vorwissen aussteigen würde."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1001 @@
+/* ------------------------------------------------------------------
+   KI-Führerschein · Lernweg
+   Farben und Schriften wie auf den gedruckten Challengekarten:
+   dunkler Grund, Kacheln in Papierweiss, Stationsfarbe als Akzent.
+   ------------------------------------------------------------------ */
+
+:root {
+  --grund: #22262c;
+  --grund-tief: #1a1d22;
+  --kachel: #f6f3e7;
+  --kachel2: #efead8;
+  --ink: #1a1d22;
+  --ink-soft: #5c6169;
+  --hell: #edeae3;
+  --route: #e8c64b;
+  --warn: #9a3412;
+  --warnflaeche: #f7e9df;
+  --akzent: #8a9099;
+
+  --sans: Barlow, "Segoe UI", system-ui, sans-serif;
+  --cond: "Barlow Condensed", Barlow, "Segoe UI", sans-serif;
+  --mono: Consolas, ui-monospace, monospace;
+
+  --rand: 16px;
+  --radius: 6px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--grund);
+  color: var(--hell);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.rahmen {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 var(--rand) 48px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- Kopf- und Fussleiste ----------------------------------------- */
+
+.kopfleiste,
+.fussleiste {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 14px 0;
+  font-family: var(--cond);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #9298a1;
+}
+
+.fussleiste {
+  margin-top: auto;
+  padding-top: 28px;
+  border-top: 1px solid #343940;
+}
+
+.textknopf {
+  background: none;
+  border: 0;
+  color: inherit;
+  font-family: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  font-size: inherit;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.textknopf:hover {
+  color: var(--route);
+}
+
+/* --- Überschriften und Marken -------------------------------------- */
+
+h1 {
+  font-family: var(--cond);
+  font-weight: 600;
+  font-size: clamp(30px, 8vw, 44px);
+  line-height: 1.05;
+  margin: 0 0 6px;
+  color: #fff;
+}
+
+h2 {
+  font-family: var(--cond);
+  font-weight: 600;
+  font-size: clamp(24px, 6vw, 32px);
+  line-height: 1.1;
+  margin: 0 0 8px;
+  color: #fff;
+}
+
+.marke {
+  font-family: var(--cond);
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 6px;
+}
+
+.kachel.dunkel .marke,
+.gp-kopf .marke,
+.startkopf .marke {
+  color: #9298a1;
+}
+
+.klein {
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  line-height: 1.45;
+}
+
+.kachel.dunkel .klein,
+.abschluss .klein,
+.lp-steuerung .klein,
+.stationskarte .klein,
+.abgabe .klein {
+  color: #9298a1;
+}
+
+.verb {
+  font-family: var(--cond);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--akzent);
+  font-size: 0.62em;
+  margin-left: 0.5em;
+  white-space: nowrap;
+}
+
+/* --- Achteck (Wegpunktmarke) --------------------------------------- */
+
+.achteck {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  flex: 0 0 36px;
+  font-family: var(--cond);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--grund);
+  background: var(--hell);
+  clip-path: polygon(
+    30% 0,
+    70% 0,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0 70%,
+    0 30%
+  );
+}
+
+.achteck.aktiv {
+  background: var(--akzent);
+  color: #fff;
+}
+
+.achteck.fertig {
+  background: var(--route);
+  color: var(--grund);
+}
+
+.achteck.gesperrt {
+  background: #3a4047;
+  color: #777d85;
+}
+
+/* --- Kacheln ------------------------------------------------------- */
+
+.kachel {
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  margin: 14px 0;
+}
+
+.kachel.hell {
+  background: var(--kachel);
+  color: var(--ink);
+}
+
+.kachel.dunkel {
+  background: var(--grund-tief);
+  color: var(--hell);
+  border: 1px solid #343940;
+}
+
+.kachel.warn {
+  background: var(--warnflaeche);
+  color: var(--ink);
+  border-left: 4px solid var(--warn);
+}
+
+.kachel p,
+.kachel ul,
+.kachel ol {
+  margin: 0 0 10px;
+}
+
+.kachel > *:last-child {
+  margin-bottom: 0;
+}
+
+.kachel ul,
+.kachel ol {
+  padding-left: 20px;
+}
+
+.kachel li {
+  margin-bottom: 5px;
+}
+
+.vorspann {
+  font-weight: 500;
+}
+
+.leitfrage {
+  font-family: var(--cond);
+  font-size: clamp(20px, 5vw, 26px);
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.prompt {
+  font-family: var(--mono);
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  background: #fff;
+  border: 1px solid #ddd8c8;
+  border-radius: 4px;
+  padding: 12px 14px;
+  margin: 0 0 12px;
+}
+
+.punkte li {
+  margin-bottom: 8px;
+}
+
+/* --- Knöpfe -------------------------------------------------------- */
+
+.knopf {
+  display: inline-block;
+  border: 1px solid #b9b3a2;
+  background: #fff;
+  color: var(--ink);
+  border-radius: 4px;
+  padding: 9px 16px;
+  font-family: var(--cond);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.knopf:hover:not(:disabled) {
+  background: var(--kachel2);
+}
+
+/* Ohne Stationsfarbe trägt die Routenfarbe den Hauptknopf. */
+.knopf.stark {
+  background: var(--route);
+  border-color: transparent;
+  color: var(--grund);
+}
+
+.station .knopf.stark,
+.gegenprobe .knopf.stark {
+  color: #fff;
+}
+
+.knopf.stark:hover:not(:disabled) {
+  filter: brightness(1.08);
+}
+
+.knopf.leise {
+  background: transparent;
+  border-color: #585e66;
+  color: var(--hell);
+}
+
+.kachel.hell .knopf.leise,
+.kachel.warn .knopf.leise {
+  border-color: #b9b3a2;
+  color: var(--ink);
+}
+
+.knopf:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* --- Tore ---------------------------------------------------------- */
+
+.tor {
+  margin: 18px 0 26px;
+  border: 1.5px solid #4a5058;
+  border-left-width: 4px;
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  background: rgba(0, 0, 0, 0.14);
+}
+
+.tor.frei {
+  border-color: var(--route);
+}
+
+.tor.zu {
+  border-color: var(--route);
+  background: rgba(232, 198, 75, 0.1);
+}
+
+.tor label {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.tor input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin: 2px 0 0;
+  flex: 0 0 20px;
+  accent-color: var(--route);
+}
+
+.tor b {
+  font-family: var(--cond);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: var(--route);
+  margin-right: 6px;
+}
+
+.tor-hinweis {
+  margin: 8px 0 0;
+  font-size: 13.5px;
+  color: #b9a05e;
+}
+
+.kachel.warn .tor-hinweis,
+.gegenprobe .tor-hinweis {
+  color: var(--warn);
+}
+
+/* --- Gestufte Hilfe ------------------------------------------------ */
+
+.hilfe {
+  background: var(--kachel2);
+  color: var(--ink);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  margin: 14px 0;
+}
+
+.hilfe-text {
+  margin: 4px 0 10px;
+}
+
+.hilfe-fuss {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+/* --- Felder -------------------------------------------------------- */
+
+.feld {
+  margin: 18px 0;
+}
+
+.feld-hinweis {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: #9ba1aa;
+  line-height: 1.45;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--ink);
+  background: #fcfcfa;
+  border: 1px solid #585e66;
+  border-radius: 4px;
+  padding: 10px 12px;
+  resize: vertical;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  outline: 2px solid var(--akzent);
+  outline-offset: 1px;
+  border-color: var(--akzent);
+}
+
+/* --- Startseite ---------------------------------------------------- */
+
+.startkopf {
+  padding: 18px 0 6px;
+}
+
+.startlead {
+  max-width: 54ch;
+  color: #c3c8d0;
+}
+
+.moduswahl {
+  display: grid;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.moduskarte {
+  text-align: left;
+  display: grid;
+  gap: 6px;
+  background: #fff;
+  border: 1.5px solid #ccc6b5;
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  cursor: pointer;
+  color: var(--ink);
+}
+
+.moduskarte:hover {
+  border-color: var(--grund);
+}
+
+.moduskarte strong {
+  font-family: var(--cond);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.moduskarte span {
+  font-size: 14.5px;
+  line-height: 1.45;
+  color: #4a4f57;
+}
+
+.moduskarte em {
+  font-family: var(--cond);
+  font-style: normal;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--warn);
+}
+
+.personzeile {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 2fr 1fr;
+}
+
+.personzeile label {
+  display: grid;
+  gap: 4px;
+}
+
+.personzeile label span {
+  font-family: var(--cond);
+  font-size: 12.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.personzeile .klein {
+  grid-column: 1 / -1;
+  color: var(--ink-soft);
+}
+
+.stationsliste {
+  display: grid;
+  gap: 12px;
+  margin: 18px 0;
+}
+
+.stationskarte {
+  text-align: left;
+  display: grid;
+  gap: 8px;
+  background: var(--grund-tief);
+  border: 1px solid #343940;
+  border-left: 4px solid var(--akzent);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  color: var(--hell);
+  cursor: pointer;
+}
+
+.stationskarte:hover {
+  border-color: var(--akzent);
+}
+
+.stk-kopf {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.stk-kopf strong {
+  font-family: var(--cond);
+  font-size: 23px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.stk-unter {
+  margin: 0;
+  font-size: 14.5px;
+  color: #b4bac2;
+}
+
+.stk-regel {
+  margin: 0;
+  font-size: 15px;
+  color: var(--route);
+  line-height: 1.4;
+}
+
+.stk-leer {
+  margin: 0;
+  font-size: 13.5px;
+  color: #777d85;
+}
+
+.stk-balken {
+  height: 4px;
+  background: #343940;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.stk-balken span {
+  display: block;
+  height: 100%;
+  background: var(--akzent);
+}
+
+.startfuss {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+/* --- Station ------------------------------------------------------- */
+
+.station {
+  padding-top: 8px;
+}
+
+.stationskopf {
+  padding: 10px 0 4px;
+  border-bottom: 1px solid #343940;
+}
+
+.sk-zeile {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.sk-unter {
+  margin: 0;
+  color: #b4bac2;
+  font-size: 15px;
+}
+
+.sk-satz {
+  margin: 12px 0 14px;
+  color: var(--route);
+  font-size: 15.5px;
+  line-height: 1.45;
+  max-width: 54ch;
+}
+
+.schiene {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 4px;
+  margin: 16px 0 10px;
+}
+
+.schienenpunkt {
+  background: none;
+  border: 0;
+  padding: 4px 0;
+  display: grid;
+  justify-items: center;
+  gap: 5px;
+  cursor: pointer;
+  color: #9298a1;
+}
+
+.schienenpunkt:disabled {
+  cursor: not-allowed;
+}
+
+.sp-titel {
+  font-family: var(--cond);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.15;
+}
+
+.abschluss {
+  border: 1.5px solid var(--route);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  margin: 20px 0;
+}
+
+.abschluss .regel {
+  font-family: var(--cond);
+  font-size: clamp(20px, 5vw, 27px);
+  line-height: 1.2;
+  color: #fff;
+  margin: 4px 0 14px;
+}
+
+/* --- Gegenprobe ---------------------------------------------------- */
+
+.gegenprobe {
+  padding: 16px 0 10px;
+}
+
+.gp-kopf {
+  border-left: 4px solid var(--route);
+  padding-left: 14px;
+  margin-bottom: 18px;
+}
+
+.gp-lead {
+  margin: 4px 0 0;
+  color: #c3c8d0;
+  max-width: 50ch;
+}
+
+.gp-regel {
+  font-family: var(--cond);
+  font-size: clamp(21px, 5.5vw, 28px);
+  line-height: 1.2;
+  margin: 0;
+}
+
+.gp-auftrag {
+  margin: 0;
+  font-size: 16.5px;
+}
+
+.gp-knopfreihe {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0 10px;
+}
+
+.mitzeichnung {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: var(--kachel2);
+  color: var(--ink);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  cursor: pointer;
+}
+
+.mitzeichnung input {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  margin: 2px 0 0;
+}
+
+.bank {
+  margin: 18px 0;
+  display: grid;
+  gap: 8px;
+}
+
+.bankfall {
+  text-align: left;
+  background: var(--grund-tief);
+  color: var(--hell);
+  border: 1px solid #454b53;
+  border-left: 4px solid #454b53;
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.bankfall:hover {
+  border-color: #6b7179;
+}
+
+.bankfall.gewaehlt {
+  border-color: var(--route);
+  border-left-color: var(--route);
+  background: rgba(232, 198, 75, 0.1);
+}
+
+.gp-ergebnis {
+  background: #fff;
+  border-radius: 4px;
+  padding: 12px 14px;
+  margin: 10px 0;
+}
+
+.gp-ergebnis p {
+  margin: 0 0 8px;
+}
+
+.abgabe {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+/* --- Lehrpersonen -------------------------------------------------- */
+
+.lp-steuerung,
+.rb-steuerung {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+.lp-wahl {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 14px 0 6px;
+}
+
+.lp-reiter {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background: var(--grund-tief);
+  border: 1px solid #343940;
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  color: var(--hell);
+  cursor: pointer;
+  font-family: var(--cond);
+  font-size: 15px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.lp-reiter.aktiv {
+  border-color: var(--akzent);
+  border-left: 4px solid var(--akzent);
+}
+
+/* --- Regelblatt ---------------------------------------------------- */
+
+.rb-knoepfe {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.blatt {
+  background: #fcfcfa;
+  color: var(--ink);
+  border-radius: var(--radius);
+  padding: 26px 24px 20px;
+  margin-bottom: 20px;
+}
+
+.blattkopf h1 {
+  color: var(--ink);
+  font-size: clamp(26px, 7vw, 38px);
+}
+
+.blattperson {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  border-top: 1px solid #cfcabc;
+  border-bottom: 1px solid #cfcabc;
+  padding: 10px 0;
+  margin: 14px 0 20px;
+}
+
+.blattperson span {
+  display: grid;
+  gap: 2px;
+  min-width: 90px;
+}
+
+.blattperson small,
+.br-mechanismus small {
+  font-family: var(--cond);
+  font-size: 11.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.blattregel {
+  border: 1px solid #cfcabc;
+  border-left: 4px solid var(--akzent);
+  border-radius: 4px;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  break-inside: avoid;
+}
+
+.br-kopf {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.br-nr {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  flex: 0 0 26px;
+  background: var(--akzent);
+  color: #fff;
+  font-family: var(--cond);
+  font-weight: 700;
+  clip-path: polygon(
+    30% 0,
+    70% 0,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0 70%,
+    0 30%
+  );
+}
+
+.br-kopf strong {
+  font-family: var(--cond);
+  font-size: 19px;
+}
+
+.br-offen {
+  margin-left: auto;
+  font-family: var(--cond);
+  font-size: 11.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--warn);
+}
+
+.br-regel {
+  font-size: 17px;
+  line-height: 1.4;
+  margin: 0 0 8px;
+}
+
+.br-linien {
+  margin: 6px 0 10px;
+  display: grid;
+  gap: 14px;
+}
+
+.br-linien span {
+  display: block;
+  border-bottom: 1px solid #cfcabc;
+  height: 10px;
+}
+
+.br-mechanismus {
+  margin: 0;
+  font-size: 14px;
+  color: #4a4f57;
+  display: grid;
+  gap: 2px;
+}
+
+.blattfuss {
+  border-top: 1px solid #cfcabc;
+  padding-top: 12px;
+  margin-top: 6px;
+}
+
+.blattfuss p {
+  margin: 0 0 6px;
+  font-size: 13.5px;
+  color: #4a4f57;
+}
+
+/* --- Breitere Fenster ---------------------------------------------- */
+
+@media (min-width: 620px) {
+  .moduswahl {
+    grid-template-columns: 1fr 1fr;
+  }
+  .lp-wahl {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 460px) {
+  .personzeile {
+    grid-template-columns: 1fr;
+  }
+  .sp-titel {
+    display: none;
+  }
+  .schiene {
+    justify-items: center;
+  }
+}
+
+/* --- Druck: nur das Regelblatt ------------------------------------- */
+
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+  }
+  .rahmen {
+    max-width: none;
+    padding: 0;
+  }
+  .kopfleiste,
+  .fussleiste,
+  .rb-steuerung {
+    display: none;
+  }
+  .blatt {
+    border-radius: 0;
+    padding: 0;
+    background: #fff;
+  }
+  .blattregel {
+    break-inside: avoid;
+  }
+  @page {
+    size: A4 portrait;
+    margin: 16mm;
+  }
+}
